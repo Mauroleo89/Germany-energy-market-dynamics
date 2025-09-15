@@ -6,7 +6,7 @@ This repository contains the code, analysis, and documentation from my project *
 
 ## 📌 Project Description  
 
-Fuel price volatility in Germany — particularly for **diesel, E5, and E10 gasoline** — has become a critical issue due to its impact on consumers, businesses, and national policy. Sudden changes in international oil markets, exchange rates, and electricity prices create uncertainty that affects transportation costs, supply chains, and energy transition strategies.  
+Fuel price volatility in Germany, particularly for **diesel, E5, and E10 gasoline**, has become a critical issue due to its impact on consumers, businesses, and national policy. Sudden changes in international oil markets, exchange rates, and electricity prices create uncertainty that affects transportation costs, supply chains, and energy transition strategies.  
 
 This project addresses these challenges by:  
 - Building a **data pipeline** to collect, clean, and process information from multiple sources (Tankerkönig API, EIA, Bundesnetzagentur, ECB).  
@@ -25,7 +25,7 @@ The project is divided into two complementary components:
 This repository serves as both an **academic contribution** and a **practical toolkit**:  
 - For researchers → providing a comparative study of classical and modern forecasting methods.  
 - For policymakers and businesses → offering insights to improve risk management and strategic planning in volatile fuel markets.  
-- For data scientists → showcasing an end-to-end workflow, from raw data extraction to advanced model evaluation.  
+- For data scientists → showcasing an end-to-end workflow, from raw data extraction to advanced model evaluation.
 
 ---
 
@@ -58,10 +58,6 @@ To develop and evaluate predictive models for short-term fuel prices in Germany,
 
 ---
 
-## 🔄 Data Pipeline & Sources  
-
----
-
 ## 🔄 Data Pipeline & Model Analysis  
 
 This project is structured into two complementary parts, following the methodology described in the thesis:
@@ -75,7 +71,8 @@ Together, these components form an end-to-end framework for forecasting German f
 
 ### 1️⃣ Data Analysis & Pipeline (`Data_Analysis.ipynb`)
 
-This notebook builds the **statistical foundation** of the project by creating a robust dataset from multiple heterogeneous sources. It is directly inspired by the **Research Design and Methods** section of the thesis:contentReference[oaicite:0]{index=0}.
+This notebook builds the **statistical foundation** of the project by creating a robust dataset from multiple heterogeneous sources and follow the structure below.
+
 
 #### Main Steps:
 - **Data Collection**  
@@ -99,11 +96,14 @@ This notebook builds the **statistical foundation** of the project by creating a
 
 📌 **Output:** A structured dataset with enriched features, ready for predictive modeling.  
 
+<img width="694" height="561" alt="grpah preprocessing" src="https://github.com/user-attachments/assets/8074d634-ddf2-4494-8032-f149af72939d" />
+
+
 ---
 
 ### 2️⃣ Model Analysis (`Model Analysis.ipynb`)
 
-This notebook implements and compares **statistical, machine learning, and deep learning models**, as described in the **Model Selection and Results** chapters of the thesis:contentReference[oaicite:1]{index=1}.
+This notebook implements and compares **statistical, machine learning, and deep learning models**, as described in the **Model Selection and Results**.
 
 #### Workflow:
 1. **Data Preparation**  
