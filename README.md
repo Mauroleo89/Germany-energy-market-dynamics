@@ -136,11 +136,22 @@ This notebook implements and compares **statistical, machine learning, and deep 
    - Accuracy (±1 cent tolerance)  
 
 4. **Model Comparison**  
-   - **ARIMA**: strong for short-term forecasts, but weak on shocks.  
-   - **VAR**: best at capturing multivariate dependencies.  
-   - **Random Forest & XGBoost**: robust, interpretable, competitive accuracy.  
+   - **ARIMA**: strong for short-term forecasts, but weak on shocks.
+<img width="547" height="413" alt="arima results" src="https://github.com/user-attachments/assets/7101c585-2b8d-41a4-9b6a-76ce3462e175" />
+
+
+   
+   - **VAR**: best at capturing multivariate dependencies.
+  <img width="981" height="528" alt="output Var" src="https://github.com/user-attachments/assets/7be49ab3-1071-4a3c-ab67-8d508521f2df" />
+
+   - **Random Forest & XGBoost**: robust, interpretable, competitive accuracy.
+<img width="835" height="505" alt="XGBOOS RANDOM output" src="https://github.com/user-attachments/assets/24538ce9-4be4-4ad8-916f-3d9e50faeda0" />
+
    - **LSTM**: underperformed due to complexity and overfitting.  
    - **GRU**: best deep learning performer, combining efficiency and accuracy.
+<img width="855" height="547" alt="2510f59b-50a9-4e6d-80d8-c97f42b528bd" src="https://github.com/user-attachments/assets/639c6263-087a-4cfe-9b10-51078dcf64f6" />
+
+  
 
 📌 **Output:** Comparative tables, forecasts vs. actual plots, and discussion of each model’s strengths and limitations.
 
@@ -155,3 +166,42 @@ This notebook implements and compares **statistical, machine learning, and deep 
 - **LSTM** was less effective in this dataset, confirming the importance of choosing architectures carefully.
 
 ---
+
+## 📊 Results & Discussion  
+
+The comparative evaluation shows that no single model dominates in all scenarios. Instead, performance depends on the forecasting horizon and the inclusion of external variables.  
+
+- **ARIMA**: Delivered accurate short-term forecasts but struggled with structural shocks and volatility.  
+- **VAR**: Outperformed other models in capturing multivariate dependencies between fuel types, oil prices, and exchange rates.  
+- **Random Forest & XGBoost**: Achieved strong predictive accuracy with interpretable results, making them practical for real-world applications.  
+- **LSTM**: Overfitted the data, resulting in lower accuracy compared to other approaches.  
+- **GRU**: The best-performing deep learning model, with robust results, faster training, and superior generalization compared to LSTM.  
+
+All results, including comparative tables, error metrics, and plots of forecasts vs. actual prices, are available in the notebooks.  
+📌 The **data pipeline and preprocessing code** is included in this repository (`Prices_code_v1.ipynb`).  
+
+---
+
+## 🔑 Key Insights  
+
+- **Global oil benchmarks (WTI, Brent)** and the **EUR/USD exchange rate** are the strongest predictors of German fuel prices.  
+- **Electricity prices** show moderate correlation, suggesting substitution effects from electromobility.  
+- Forecasting methods must balance **interpretability (Random Forest, XGBoost)** with **accuracy (VAR, GRU)** depending on the use case.  
+- Policymakers, businesses, and consumers can benefit from improved forecasting to **manage risk, optimize supply chains, and increase transparency**.  
+
+---
+
+## 🔮 Future Work  
+
+This project provides a solid foundation, but several extensions are possible:  
+
+- Incorporating **taxation policies** and **regional transport costs** into the models.  
+- Expanding analysis to other **energy commodities** (coal, natural gas, renewables).  
+- Applying **Explainable AI methods (e.g., SHAP values)** to better interpret model decisions.  
+- Building a **real-time dashboard** to provide alerts and forecasts for stakeholders.  
+- Extending the scope from Berlin/state-level data to **national and EU-level comparisons**.  
+
+The pipeline and model code in this repository can be adapted for these future directions.  
+
+---
+
