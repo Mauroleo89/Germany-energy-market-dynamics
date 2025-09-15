@@ -4,7 +4,7 @@ This repository contains the code, analysis, and documentation from my project *
 
 ---
 
-## 📌 Project Description  
+## Project Description  
 
 Fuel price volatility in Germany, particularly for **diesel, E5, and E10 gasoline**, has become a critical issue due to its impact on consumers, businesses, and national policy. Sudden changes in international oil markets, exchange rates, and electricity prices create uncertainty that affects transportation costs, supply chains, and energy transition strategies.  
 
@@ -29,7 +29,7 @@ This repository serves as both an **academic contribution** and a **practical to
 
 ---
 
-## 🎯 Problem & Context  
+## Problem & Context  
 
 Fuel prices in Germany are highly volatile, influenced by international crude oil markets, exchange rates, electricity prices, and geopolitical shocks.  
 This volatility directly affects **consumers** (household costs), **businesses** (transportation and supply chains), and **policymakers** (energy security, inflation control, and transition strategies).  
@@ -41,7 +41,7 @@ This volatility directly affects **consumers** (household costs), **businesses**
 
 ---
 
-## 🎯 Objectives & Research Questions  
+## Objectives & Research Questions  
 
 **Main Goal:**  
 To develop and evaluate predictive models for short-term fuel prices in Germany, using both domestic and international market indicators.  
@@ -58,12 +58,12 @@ To develop and evaluate predictive models for short-term fuel prices in Germany,
 
 ---
 
-## 🔄 Data Pipeline & Model Analysis  
+## Data Pipeline & Model Analysis  
 
 This project is structured into two complementary parts, following the methodology described in the thesis:
 
-1. **Data Analysis & Pipeline (📓 `Data_Analysis.ipynb`)**  
-2. **Modeling & Evaluation (📓 `Model Analysis.ipynb`)**
+1. **Data Analysis & Pipeline (`Data_Analysis.ipynb`)**  
+2. **Modeling & Evaluation (`Model Analysis.ipynb`)**
 
 Together, these components form an end-to-end framework for forecasting German fuel prices.
 
@@ -72,7 +72,7 @@ Together, these components form an end-to-end framework for forecasting German f
 
 ---
 
-### 1️⃣ Data Analysis & Pipeline (`Data_Analysis.ipynb`)
+### 1. Data Analysis & Pipeline (`Data_Analysis.ipynb`)
 
 This notebook builds the **statistical foundation** of the project by creating a robust dataset from multiple heterogeneous sources and follow the structure below.
 
@@ -97,14 +97,14 @@ This notebook builds the **statistical foundation** of the project by creating a
   - **Comparative analysis across states** (ANOVA test confirms both regional and seasonal influences).  
   - **Visualizations**: historical fuel price evolution, histograms, regional differences, COVID-19 and Ukraine war impacts.
 
-📌 **Output:** A structured dataset with enriched features, ready for predictive modeling.  
+**Output:** A structured dataset with enriched features, ready for predictive modeling.  
 
 <img width="694" height="561" alt="grpah preprocessing" src="https://github.com/user-attachments/assets/8074d634-ddf2-4494-8032-f149af72939d" />
 
 
 ---
 
-### 2️⃣ Model Analysis (`Model Analysis.ipynb`)
+### 2. Model Analysis (`Model Analysis.ipynb`)
 
 This notebook implements and compares **statistical, machine learning, and deep learning models**, as described in the **Model Selection and Results**.
 
@@ -153,11 +153,11 @@ This notebook implements and compares **statistical, machine learning, and deep 
 
   
 
-📌 **Output:** Comparative tables, forecasts vs. actual plots, and discussion of each model’s strengths and limitations.
+ **Output:** Comparative tables, forecasts vs. actual plots, and discussion of each model’s strengths and limitations.
 
 ---
 
-### 🔑 Integrated Findings
+### Integrated Findings
 
 - International oil prices (**WTI & Brent**) and exchange rates (**EUR/USD**) are the **strongest predictors** of German fuel prices.  
 - **Electricity prices** show moderate correlation, indicating substitution effects with electromobility.  
@@ -167,7 +167,7 @@ This notebook implements and compares **statistical, machine learning, and deep 
 
 ---
 
-## 📊 Results & Discussion  
+## Results & Discussion  
 
 The comparative evaluation shows that no single model dominates in all scenarios. Instead, performance depends on the forecasting horizon and the inclusion of external variables.  
 
@@ -182,7 +182,7 @@ All results, including comparative tables, error metrics, and plots of forecasts
 
 ---
 
-## 🔑 Key Insights  
+## Key Insights  
 
 - **Global oil benchmarks (WTI, Brent)** and the **EUR/USD exchange rate** are the strongest predictors of German fuel prices.  
 - **Electricity prices** show moderate correlation, suggesting substitution effects from electromobility.  
@@ -191,7 +191,7 @@ All results, including comparative tables, error metrics, and plots of forecasts
 
 ---
 
-## 🔮 Future Work  
+## Future Work  
 
 This project provides a solid foundation, but several extensions are possible:  
 
