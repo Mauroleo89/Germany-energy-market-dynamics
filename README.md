@@ -60,7 +60,7 @@ To develop and evaluate predictive models for short-term fuel prices in Germany,
 
 ## Data Pipeline & Model Analysis  
 
-This project is structured into two complementary parts, following the methodology described in the thesis:
+This project is structured into two complementary parts, following the methodology described below:
 
 1. **Data Analysis & Pipeline (`Data_Analysis.ipynb`)**  
 2. **Modeling & Evaluation (`Model Analysis.ipynb`)**
