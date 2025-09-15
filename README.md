@@ -67,6 +67,9 @@ This project is structured into two complementary parts, following the methodolo
 
 Together, these components form an end-to-end framework for forecasting German fuel prices.
 
+<img width="852" height="215" alt="Research Design" src="https://github.com/user-attachments/assets/47687f35-fe10-44fd-8308-759ada5a9b81" />
+
+
 ---
 
 ### 1️⃣ Data Analysis & Pipeline (`Data_Analysis.ipynb`)
@@ -104,6 +107,9 @@ This notebook builds the **statistical foundation** of the project by creating a
 ### 2️⃣ Model Analysis (`Model Analysis.ipynb`)
 
 This notebook implements and compares **statistical, machine learning, and deep learning models**, as described in the **Model Selection and Results**.
+
+<img width="871" height="635" alt="modelling process" src="https://github.com/user-attachments/assets/f435889a-72db-422d-a0b5-46427d6ea042" />
+
 
 #### Workflow:
 1. **Data Preparation**  
